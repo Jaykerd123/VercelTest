@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Vercel Test Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🚀 Hello Vercel!</h1>
+    <p>This is my first deployed website.</p>
+    <button onclick="changeText()">Click Me</button>
+    <p id="msg"></p>
+  </div>
+
+  <script>
+    function changeText() {
+      document.getElementById("msg").innerText =
+        "🎉 Button works! Your site is live.";
+    }
+  </script>
+
+</body>
+</html>
